@@ -1,0 +1,76 @@
+* {
+    @include box-sizing(border-box);
+}
+
+html {
+    font-family: $base-font-family;
+    @include establish-baseline(16px);
+    @include adjust-leading-to(4);
+    text-rendering: optimizelegibility;
+}
+
+section > div,
+footer > div,
+header > div {
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 5;
+    background: white;
+}
+
+body {
+    color: $black;
+}
+
+main {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 4;
+}
+
+.section-content-wrapper {
+    clear: both;
+}
+
+.align-center {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 80px 40px;
+}
+
+.lazy {
+    background: url(../img/spinner.gif) center no-repeat;
+}
+
+.no-js .lazy {
+    display: none;
+}
+
+.checkbox-hack {
+    display: none;
+}
+
+// http://precisepixels.co.uk/blog/2014/01/30/checkbox-hack-problem-with-android-2-3/
+.force-repaint { -webkit-animation: force-repaint infinite 1s; }
+
+@-webkit-keyframes force-repaint {
+    from { fill: 0; }
+    to   { fill: 0; }
+}
+
+@media ($min_bp_b) {
+    .section-padding {
+        padding: 120px 40px;
+    }
+}

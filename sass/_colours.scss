@@ -1,0 +1,26 @@
+$black: #2a2a2a;
+$blue: #4dbacf;
+$white: #FFF;
+$lgrey: #EEE;
+$mgrey: #999;
+$dgrey: #333;
+
+.lgrey {
+	background: $lgrey;
+	color: $black;
+}
+
+.white {
+	background: $white;
+	color: $black;
+}
+
+.black {
+	background: $black;
+	color: white;
+}
+
+.blue {
+	background: $blue;
+	color: white;
+}

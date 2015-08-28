@@ -1,0 +1,17 @@
+@import "compass";
+@import "compass/layout";
+@import "compass/reset";
+
+// Font weights
+$light: 200;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: 'Source Sans Pro', serif;
+$base-font-weight: $regular;
+$base-font-size: 16px;
+$base-line-height: 8px;
+
+$trans-s: .3s;
+$trans-l: .6s;
